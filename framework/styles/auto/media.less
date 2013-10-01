@@ -1,0 +1,57 @@
+/**
+ * A container which limits the width of its children to a reasonable maximum.
+ */
+.limit-width
+{
+	max-width: 640px; /* default YouTube video size */
+}
+
+/**
+ * Causes the image to fill its container.
+ */
+img.fill
+{
+	width: 100%;
+}
+
+/**
+ * Based on "Creating Intrinsic Ratios for Video" by Thierry Koblentz,
+ * <http://alistapart.com/article/creating-intrinsic-ratios-for-video>.
+ */
+.media-fill
+{
+	height: 0;
+	margin-bottom: 1em;
+	padding-bottom: 75%; /* default to 3:4 aspect-ratio */
+	position: relative;
+
+	/**
+	 * Sizes for 16:9 aspect ratio.
+	 */
+	&.widescreen
+	{
+		padding-bottom: 56.25%;
+	}
+
+	/**
+	 * Adds extra space at the bottom for YouTube's toolbar.
+	 */
+	&.youtube
+	{
+		/*padding-top: 25px;*/ /* looks like this is not needed anymore */
+	}
+
+	&>iframe,&>object
+	{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+	&>object>embed
+	{
+		width: 100%;
+		height: 100%;
+	}
+}

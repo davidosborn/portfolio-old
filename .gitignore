@@ -1,0 +1,23 @@
+*~
+~*
+dump
+framework/cache
+
+# These files are too large to be stored in the Git repository, so they are
+# backed up in an archive at a separate location.  You can temporarily comment
+# them out to have utils/upload.sh process them.
+#NOREPO_BEGIN
+external/naturalcleaning
+external/travelexperts1
+projects/3d/include/assets/violin.ogg
+projects/chickenassault/include/assets/chickenassault.swf
+projects/explorer/include/assets/explorer-demo.zip
+projects/explorer/include/assets/explorer-documentary.mov
+projects/explorer/include/assets/explorer-documentary.mpg
+projects/explorer/include/assets/explorer-documentary.ogg
+projects/explorer/include/assets/explorer-wide-*.png
+projects/naturalcleaning/include/assets/naturalcleaning-1.png
+projects/page/include/assets/page-*.png
+projects/page/include/assets/page-demo.zip
+projects/page/include/assets/page-video-1.ogg
+#NOREPO_END

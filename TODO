@@ -1,0 +1,92 @@
+The site is almost working on my phone, but its just a little too wide (could be fixed).
+
+There is a big space between the introductory text and the project list on the Nexus 7.
+
+Take screenshots of the site running on my different devices to show responsive design on the portfolio page.
+
+Need to purge/recreate cached PHP/HTML pages when any of the dependencies have changed.
+
+Consider adding a step to merge all of the CSS files into one.
+
+In utils/upload.sh, it is uploading everything in the cache, not just .timestamp.
+
+A bunch of the project pages need to be filled in with text and screenshots.
+I should talk about what each project was, purpose, tech used,
+
+On mobile devices, show the welcome section on the main page just above the project list.
+
+The PROJECTS array contains a description of each project and an array of the tech used.
+Integrate this into the project listing, and have the tags as a comma-separated one-liner.
+
+Allow the user to disable the iframe if they want to (ie: click to toggle).
+
+-----------------
+
+Replace all instances of querySelector{,All} with find.
+Find needs to be enhanced to allow starting from the "document" element.
+This currently doesn't work because it tries to set its ID.
+
+The minimum width of the project info div is too small on at least one browser
+(maybe IE?) because then the PAGE project overflows onto too many lines.
+
+It would be nice if the GitHub banner could overlay the rest of the page without
+preventing the top-right-most project in the list from being selected.
+
+A lot of the links don't work, and the project list is messed up, in IE7.
+
+Consider writing a standard HTML5/YouTube-fallback video function (test in IE).
+
+iframe's response to resize events has been disabled due to a bug.
+
+Consider rewriting the address bar with a ?project=XXX query string when you select a project or a tag.
+Consider handling ?tags=XXX in the query string on page load.
+
+Ensure the Explorer demo meets the licensing requirements of its dependencies (rebuild and include license files).
+
+Change PAGE so that it checks for OpenAL32.dll and disables audio if its not found.
+
+Reduce the size/quality of the Explorer MPEG video, and create an Ogg/Theora version.
+
+If HTML5 video is not supported, we might need to detect this and replace with the YouTube version.
+The current function for doing this may not work when HTML5 isn't supported at all.
+
+Test everything with IE7 and IE8.  Also test IE6, but not for feature completion.
+
+iframe.js is affecting the positioning of the footer.
+
+iframe.js shouldn't force scrollbars to be hidden in IE.
+
+The include/content/welcome.html.php should be able to have any HTML extension.
+The same thing is needed in body.html.php when finding the thumbnail images.
+
+Add some kind of subtle animation, whether its birds flying in the background or grass swaying in the wind.
+
+Add some kind of background than integrates with the iframe, whether its clouds slightly occluding the bottom-left corner or something else.
+
+Consider using jQuery animation to make the iframe grow/shrink when loading a new project.
+
+Consider adding categories and/or tags.
+
+It would be better if the variables weren't sent to lessphp as strings when not necessary, so we wouldn't have to unquote them.  But lessphp can't parse the paths as non-strings.
+
+Use YouTube video of Explorer (just uploaded).
+
+Try to find backup copy of Explorer source code.
+
+Link to YouTube video of PAGE's AABB system or try to copy the video to my account.
+
+Consider moving lessphp and Mobile_Detect out of the php directory and into include/thirdparty.
+
+Consider making XXX_URL not include a trailing path-separator, which is what Drupal apparently does.
+
+Consider inserting the proper root directory (ie: HTML_FROM_SITE_ROOT) by default in "load_XXX" and "load_XXX_if_exists".
+
+Make a nice hand-drawn background with pencil (or at least textured).
+
+When the wildcard for list_dir has no wildcard characters, it should still match the pattern specified.
+
+The pattern matching in list_dir should compare extensions non-case-sensitively.
+
+I don't think the path sorting in list_dir produces the correct results (/ vs _, etc).
+
+Consider caching more of the site.  See <http://phplens.com/lens/php-book/optimizing-debugging-php.php>.

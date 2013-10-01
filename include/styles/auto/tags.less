@@ -1,0 +1,72 @@
+#tags
+{
+	.disable-selection;
+
+	border: 1px solid #666;
+	display: none;
+	margin-top: 12px;
+	padding: 4px 8px;
+
+	h1
+	{
+		font-size: 1em;
+		font-weight: normal;
+		margin-bottom: 2px;
+		white-space: nowrap;
+	}
+
+	.tags-combiner
+	{
+		cursor: pointer;
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+
+	ul
+	{
+		.clear-list-style;
+		margin-left: -8px;
+	}
+
+	.tag
+	{
+		cursor: pointer;
+		float: left;
+		margin-left: 8px;
+		position: relative;
+		vertical-align: middle;
+
+		&.selected>.text,&>.spacer
+		{
+			font-size: 1.2em;
+			font-weight: bold;
+			letter-spacing: -1px;
+		}
+
+		&>.spacer
+		{
+			visibility: hidden;
+		}
+
+		&>.text
+		{
+			bottom: 0;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			text-align: center;
+			width: 100%;
+
+			&>table
+			{
+				height: 100%;
+				width: 100%;
+
+				&>tbody>tr>td
+				{
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+}
