@@ -1,7 +1,7 @@
 Portfolio
 =========
 
-This is David Osborn's portfolio website.
+This is David Osborn's old portfolio website.
 
 The website is written in PHP, backward-compatible HTML5 and CSS3, and
 Javascript.  There are some Python and Bash scripts in the `utils` directory.
